@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="jq.js"></script>
+
+</head>
+<body>
+    <button onclick="" class="btn">Click On the Way</button>
+    <div class="container">
+        <table class="tab" style="width:100%" border="1" cell-spacing="20px" >
+            <tr class="fst">
+              <th onclick="">Firstname</th>
+              <th onclick="">Lastname</th>
+              <th onclick="">Age</th>
+            </tr>
+            <tr class="scd">
+              <td onclick="">Jill</td>
+              <td onclick="">Smith</td>
+              <td onclick="">50</td>
+            </tr>
+            <tr class="thr">
+              <td onclick="">Eve</td>
+              <td onclick="">Jackson</td>
+              <td onclick="">94</td>
+            </tr>
+            <tr class="scd">
+                <td onclick="">Jill</td>
+                <td onclick="">Smith</td>
+                <td onclick="">50</td>
+              </tr>
+              <tr class="thr">
+                <td onclick="">Eve</td>
+                <td onclick="">Jackson</td>
+                <td onclick="">94</td>
+              </tr>
+              <tr class="scd">
+                <td onclick="">Jill</td>
+                <td onclick="">Smith</td>
+                <td onclick="">50</td>
+              </tr>
+              <tr class="thr">
+                <td onclick="">Eve</td>
+                <td onclick="">Jackson</td>
+                <td onclick="">94</td>
+              </tr>
+              <tr class="scd">
+                <td onclick="">Jill</td>
+                <td onclick="">Smith</td>
+                <td onclick="">50</td>
+              </tr>
+              <tr class="thr">
+                <td onclick="">Eve</td>
+                <td onclick="">Jackson</td>
+                <td onclick="">94</td>
+              </tr>
+              <tr class="scd">
+                <td onclick="">Jill</td>
+                <td onclick="">Smith</td>
+                <td onclick="">50</td>
+              </tr>
+              <tr class="thr">
+                <td onclick="">Eve</td>
+                <td onclick="">Jackson</td>
+                <td onclick="">94</td>
+              </tr>
+              <tr class="scd">
+                <td onclick="">Jill</td>
+                <td onclick="">Smith</td>
+                <td onclick="">50</td>
+              </tr>
+              <tr class="thr">
+                <td onclick="">Eve</td>
+                <td onclick="">Jackson</td>
+                <td onclick="">94</td>
+              </tr>
+
+          </table>
+          <script>
+
+              $(document).ready(() => {
+
+                $(".container").hide();
+                  
+
+                  $("button").click(function(){
+
+                  alert("Thank you");
+
+                  $(".container").show();
+
+                  });
+
+                //   $("tr").click(function(){
+                //       var abc = this.id
+
+                //     $("#"+abc+").css("background-color", "lightblue")
+                //      });
+
+
+                  $(".fst").click(function(){
+                    $(".fst").css("background-color", "lightblue")
+                    $(".scd").css("background-color", "transparent")
+                    $(".thr").css("background-color", "transparent")
+                   
+                     });
+                  $(".scd").click(function(){
+                    $(".scd").css("background-color", "lightpink")
+                    $(".thr").css("background-color", "transparent")
+
+                    });
+                    $(".thr").click(function(){
+                    $(".thr").css("background-color", "lightgrey")
+                    $(".scd").css("background-color", "transparent")
+
+                    });
+
+              });
+
+
+          </script>
+
+    </div>
+
+    
+</body>
+</html>
